@@ -5,7 +5,109 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+            rel="stylesheet"
+        />
     </head>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: unset;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .sidebar {
+            position: fixed;
+            bottom: 0;
+            top: 0;
+            background: black;
+            width: 180px;
+        }
+
+        .sidebar ul li {
+        }
+
+        .sidebar ul li a {
+            display: block;
+            padding: 12px 16px 12px;
+            color: #fff;
+            font-size: 16px;
+            border-bottom: 1px solid #5c5c5c;
+        }
+
+        .sidebar ul li a:hover {
+            background: #5c5c5c;
+        }
+
+        .main {
+            width: calc(100% - 180px);
+            margin: 20px 0 0 180px;
+        }
+
+        .main__logo {
+            width: 310px;
+            height: 122px;
+            margin: 0 auto;
+        }
+
+        .main__text {
+            width: 84%;
+            margin: 30px auto 0;
+            padding: 38px 0;
+            background: #efefef;
+        }
+
+        .main__text > div {
+            width: 72%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .main__text h3 {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .main__text p {
+            text-indent: 20px;
+            text-align: center;
+        }
+
+        .main__list {
+            display: flex;
+            justify-content: space-between;
+            width: 84%;
+            margin: 0 auto;
+            gap: 20px;
+            margin-top: 22px;
+        }
+
+        .main__list > div > div > div {
+            width: 128px;
+            height: 128px;
+            float: left;
+        }
+
+        .main__list > div > div > p {
+            width: calc(100% - 28px);
+            text-align: justify;
+        }
+    </style>
     <body>
         <div>
             <div class="sidebar">
@@ -17,7 +119,107 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
+            <div class="main">
+                <div class="main__logo">
+                    <img
+                        src="https://s3-alpha-sig.figma.com/img/be54/004d/40b2754bf32a69e46f3afbc0bc31cd28?Expires=1667174400&Signature=FcKE8O~M62fAKTEPQMravsSttLJtDsmwfYP5YWqubLXfUs7XNZtAl78Iqr-65QykOAeEdc09InZ03iVyBobWXNQrsD96tNI2Oj3daZGYGD2n3-HKU~aH-kuV4ktNAMXDdFWmaf1tKsqhyuHoYymlXEJi7J3YLakUemR3kzb6XuS-pvNgJ1x0y0-CfzDg9ZsWrz4Ui7aszYShiMIM80N0pFD2iOvuqsToXbvIKskcD4sPBtwjoSR17kOEOY97DkGmgGZD~MCPJYnuLsW47OytD73KDPNAjQQHZ3~ZkJU1NI-zwnauLoqranfQREKuxNeciJ81BgmcV1kXnSleNgUIwg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                        alt="logo"
+                    />
+                </div>
+                <div class="main__text">
+                    <div>
+                        <h3>Lorem ipsum dolor sit asmet?</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Sed tristique consequat placerat. Vestibulum
+                            auctor pellentesque sem, eu posuere erat hendrerit
+                            quis. Maecenas vel consequat turpis. Nam facilisis,
+                            ligula in mattis sodales, augue justo tristique
+                            nulla, sed lacinia ante eros ut mi. Morbi vitae diam
+                            augue. Aliquam vel mauris a nibh auctor commodo.
+                            Praesent et nisi eu justo eleifend convallis.
+                            Quisque suscipit maximus vestibulum. Phasellus
+                            congue mollis orci, sit amet luctus augue tristique
+                            eu. Donec vulputate odio neque, sed semper turpis
+                            pellentesque a.
+                        </p>
+                    </div>
+                </div>
+                <div class="main__list">
+                    <div>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <div>
+                            <div>
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/ee5d/7134/af6932e0d359fce7f35402c40d54bc99?Expires=1667174400&Signature=BzVNiCNGkW~3Ay3IWwZv1dTQUOeZ3j9J1OXMCINyq1e4Z3ToVAHMkb6eYaMOVhErEEypSEeHIgkmbqEcQqED7ZhYLJBSqXOp2cCSLUT8YkFokB5pF6-cEoJ9brrYWQ8RXAKAbEvhSc-sBjNBfhNAZSYpotcXQOmO4ZkV16of9cq-jNhdcNHmKJ7ZtCovVdltK4B2bW8QiO6JHeNO8UULuek42ZAMDE2yuS4EQmL-VOWV2vTQJPc3CCPyrJiHPFAakRAt5evsluHU7SlQfrgqPfPdvORSictmLzHFO50pupyFexuD6fGEG6uP06RZuqwbm-KA92KqKy9N13j~q6um9A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                    alt="css"
+                                />
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sed non dui sodales, faucibus
+                                libero ut, posuere felis. Donec imperdiet
+                                suscipit accumsan. Aenean consequat condimentum
+                                velit ut tempor. Nam porta massa in metus
+                                bibendum congue. Pellentesque ultrices liquam
+                                egestas nunc at ullamcorper ultricies. Donec
+                                feugiat velit nulla, vel sodales est ullamcorper
+                                id. Aenean consequat condimentum velit ut
+                                tempor. Nam porta massa in metus bibendum
+                                congue. Pellentesque ultrices vestibulum mattis.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <div>
+                            <div>
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/2283/e203/66ceb1e8d5d276758ee00c3663bae8e9?Expires=1667174400&Signature=gVXRE1S0OW2WU0oDGtdvAC2PfQa4L8yLvaTKkV7Tkdh-srLhkXRnpAzZWCTOBJlGByDTlKGtddLA6SmorA02jJdj0EkH7Uln9be9UnzBklcGxSAabfUu3SM5Fy-uv5uJzWHWlQdao7O6FHZIQH5WhQq4H~WGDR5zrmd2j1L8YLBrfsiwIDE-tbataJ4Bj8JBwdgo-9t07sqD80O3YtYmGizCq0Xiz0UtusRcFmvykWqILrSrRQwA~MHhVMq~~psroU8j36hRXdu6GRibcQSWoD0zd9H2lkSVEQdpclF5BmoPNAq8TEK1pP2xy01REuvrvFD~1E~a3aw8D3BHTcYBhg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                    alt="html"
+                                />
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sed non dui sodales, faucibus
+                                libero ut, posuere felis. Donec imperdiet
+                                suscipit accumsan. Aenean consequat condimentum
+                                velit ut tempor. Nam porta massa in metus
+                                bibendum congue. Pellentesque ultrices liquam
+                                egestas nunc at ullamcorper ultricies. Donec
+                                feugiat velit nulla, vel sodales est ullamcorper
+                                id. Aenean consequat condimentum velit ut
+                                tempor. Nam porta massa in metus bibendum
+                                congue. Pellentesque ultrices vestibulum mattis.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <div>
+                            <div>
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/c9c3/230b/112f1704f67d2cb7c852b396cde6858e?Expires=1667174400&Signature=S042AvSVZbqQP7iv6HnvU8FZNhrGDygCyugSJkbtvwVfvCyXKe4ZsNGDWBZIzMcNos6hoOJH57~gO-g-kZgq-03fN8fJN0RaBDYIyblvjtJ317EL-hPR-zdJReM0JgGMC5o~XLaPibcOL49ETbRxHxOGQ1IX8g3OkRSG-SohpsdIpWqQTWDPQ6UE~uXRgr5dtETynjLKFM2BaB92m5XTeROrq2ma3HvQv~eJV8ss3~xdUOPuhLyi4rNvLjvNIfPxGxymmF~aldYLaYw2Va3RzTn1UW7aSuFEe7hCC0cSnF-jl7tji16xvGSsS2j6cvsrNnojLo4rg7tKie-Ik8xg6A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                    alt="url"
+                                />
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sed non dui sodales, faucibus
+                                libero ut, posuere felis. Donec imperdiet
+                                suscipit accumsan. Aenean consequat condimentum
+                                velit ut tempor. Nam porta massa in metus
+                                bibendum congue. Pellentesque ultrices liquam
+                                egestas nunc at ullamcorper ultricies. Donec
+                                feugiat velit nulla, vel sodales est ullamcorper
+                                id. Aenean consequat condimentum velit ut
+                                tempor. Nam porta massa in metus bibendum
+                                congue. Pellentesque ultrices vestibulum mattis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
-    <script></script>
 </html>
